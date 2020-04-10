@@ -3,14 +3,14 @@
 namespace ChurakovMike\FormTypeCast;
 
 use Carbon\CarbonInterface;
+use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
-use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Date;
 
 /**
- * Trait TypeCastTrait
+ * Trait TypeCastTrait.
  * @package ChurakovMike\FormTypeCast
  * @property array $casts
  *
@@ -24,7 +24,7 @@ trait TypeCastTrait
      */
     public function __get($key)
     {
-        $value =  Arr::get($this->all(), $key, function () use ($key) {
+        $value = Arr::get($this->all(), $key, function () use ($key) {
             return $this->route($key);
         });
 
