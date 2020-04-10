@@ -44,6 +44,9 @@
     "scripts": {
         "run:unit": [
             "phpunit ./tests"
+        ],
+        "run:coverage": [
+            "phpunit --configuration phpunit.xml --coverage-text"
         ]
     }
 }

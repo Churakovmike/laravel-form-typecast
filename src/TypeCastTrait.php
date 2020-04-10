@@ -238,4 +238,12 @@ trait TypeCastTrait
     {
         return $this->asDateTime($value)->getTimestamp();
     }
+
+    /**
+     * @param array $casts
+     */
+    public function setCasts(array $casts = [])
+    {
+        $this->casts = $casts;
+    }
 }
