@@ -1,16 +1,16 @@
-### Laravel form typecasting
+## Laravel form typecasting
 
-## Requirements
+### Requirements
 + laravel 5.5+
 
-# Getting started
-## install
+## Getting started
+### Install
 The package is available on packagist.
 ```php
 composer require churakovmike/laravel-form-typecast
 ```
 
-## Usage
+### Usage
 You just need to use this trait.
 
 ```php
